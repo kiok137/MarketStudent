@@ -400,5 +400,13 @@ INSERT INTO `user` VALUES (2,'user1','$2a$10$P4fAjNOmpYcQCMmr9nfW7eemEwHo7Lcc/SG
 INSERT INTO `user` VALUES (3,'user2','$2a$10$P4fAjNOmpYcQCMmr9nfW7eemEwHo7Lcc/SGvLK7fIEc8pkGM5noU.','李四',2,'13800138002','lisi@example.com',1,'2025-04-05 23:43:30','2025-04-06 19:22:01');
 INSERT INTO `user` VALUES (4,'test1','$2a$10$P4fAjNOmpYcQCMmr9nfW7eemEwHo7Lcc/SGvLK7fIEc8pkGM5noU.','王五',2,'13800138003','wangwu@supplier.com',1,'2025-04-05 23:43:30','2025-04-17 23:24:32');
 
+-- =============================================================
+-- 刷新演示数据时间：让采购/出入库落在最近两周，
+-- 仪表盘的趋势图与统计卡片才有内容可展示
+-- =============================================================
+UPDATE purchase_order SET created_at = DATE_SUB(NOW(), INTERVAL (order_id * 2) DAY);
+UPDATE purchase_order SET approved_at = DATE_ADD(created_at, INTERVAL 1 HOUR) WHERE status >= 1;
+UPDATE purchase_order SET received_at = DATE_ADD(created_at, INTERVAL 2 DAY) WHERE status = 2;
+UPDATE stock_in  SET created_at = DATE_SUB(NOW(), INTERVAL (stock_in_id % 10) DAY);
+UPDATE stock_out SET created_at = DATE_SUB(NOW(), INTERVAL (stock_out_id % 10) DAY);
 SET FOREIGN_KEY_CHECKS = 1;
-

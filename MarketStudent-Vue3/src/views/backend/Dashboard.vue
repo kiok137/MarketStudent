@@ -357,7 +357,7 @@ const fetchCategoryData = async () => {
           itemGap: 10,
           formatter: (name) => {
             const item = response.find(i => i.name === name)
-            return `${name} · ${item.count}`
+            return `${name} · ${item ? item.value : 0} 个`
           },
           textStyle: {
             color: '#666'
@@ -391,7 +391,7 @@ const fetchCategoryData = async () => {
               show: false
             },
             data: response.map((item, index) => ({
-              value: item.count,
+              value: item.value,
               name: item.name,
               itemStyle: {
                 color: colorPalette[index % colorPalette.length]
