@@ -159,6 +159,12 @@ export function generateAsyncRoutes(menuItems, parentPath = '') {
       
       // 生成子路由，传递父路径
       route.children = generateAsyncRoutes(menu.children, currentPath)
+
+      // 父级菜单本身没有组件，默认跳到第一个子页面（如 /system -> /system/user）
+      const firstChild = route.children.find(child => child.name)
+      if (!route.component && firstChild) {
+        route.redirect = { name: firstChild.name }
+      }
     }
 
     routes.push(route)

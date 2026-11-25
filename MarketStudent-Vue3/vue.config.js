@@ -4,6 +4,8 @@ module.exports = defineConfig({
   lintOnSave: false,
   
   devServer: {
+    // 直连子路径（刷新/粘贴地址）时回退到 index.html，避免 404
+    historyApiFallback: true,
     client: {
       overlay: false
     },
