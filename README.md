@@ -17,15 +17,14 @@
 
 ## 界面预览
 
-| 仪表盘（统计卡片 + 采购趋势 + 分类占比 + 采购库存对比） | 采购订单管理 |
+| 数据看板 | 采购订单 |
 | :---: | :---: |
 | ![仪表盘](docs/screenshots/02-dashboard.png) | ![采购订单](docs/screenshots/03-purchase.png) |
 
-| AI 生成商品文案（接入大模型 API） | 登录页 |
+| AI 生成商品文案 | 登录页 |
 | :---: | :---: |
 | ![AI 生成文案](docs/screenshots/04-ai.png) | ![登录页](docs/screenshots/01-login.png) |
 ---
-
 ## 技术栈
 
 **后端**
