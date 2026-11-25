@@ -1,8 +1,25 @@
 # 超市进销存管理系统（MarketStudent）
 
+<p align="center">
+  <img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-3.2.0-6DB33F?logo=springboot&logoColor=white" />
+  <img alt="JDK" src="https://img.shields.io/badge/JDK-17-007396?logo=openjdk&logoColor=white" />
+  <img alt="Vue" src="https://img.shields.io/badge/Vue-3.2-4FC08D?logo=vuedotjs&logoColor=white" />
+  <img alt="Element Plus" src="https://img.shields.io/badge/Element%20Plus-2.9-409EFF?logo=element&logoColor=white" />
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white" />
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+</p>
+
 一个基于 **Spring Boot 3 + Vue 3** 前后端分离的超市进销存管理系统，覆盖「商品 → 供应商 → 采购 → 入库/出库 → 库存预警 → 数据看板」的完整业务闭环，同时实现了基于 RBAC 的权限管理与 AOP 操作日志。
 
 > 本项目为个人课程实践项目，独立完成数据库设计、后端接口、前端页面与部署调试。
+
+---
+
+## 界面预览
+
+<p align="center">
+  <img src="docs/screenshots/01-login.png" alt="登录页" width="900" />
+</p>
 
 ---
 
