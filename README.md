@@ -17,14 +17,13 @@
 
 ## 界面预览
 
-<p align="center">
-  <img src="docs/screenshots/03-purchase.png" alt="采购订单管理" width="900" />
-</p>
+| 仪表盘（统计卡片 + 采购趋势 + 分类占比 + 采购库存对比） | 采购订单管理 |
+| :---: | :---: |
+| ![仪表盘](docs/screenshots/02-dashboard.png) | ![采购订单](docs/screenshots/03-purchase.png) |
 
-<p align="center">
-  <img src="docs/screenshots/01-login.png" alt="登录页" width="820" />
-</p>
-
+| AI 生成商品文案（接入大模型 API） | 登录页 |
+| :---: | :---: |
+| ![AI 生成文案](docs/screenshots/04-ai.png) | ![登录页](docs/screenshots/01-login.png) |
 ---
 
 ## 技术栈
