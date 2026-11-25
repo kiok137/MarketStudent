@@ -1,0 +1,70 @@
+/* Supermarket Inventory Management System Theme */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #1E88E5, /* Clear blue - representing organization and clarity */
+    ),
+    'success': (
+      'base': #43A047, /* Fresh green - representing freshness and produce */
+    ),
+    'warning': (
+      'base': #FF9800, /* Orange - representing caution and attention */
+    ),
+    'danger': (
+      'base': #E53935, /* Red - representing alerts and expiration */
+    ),
+    'info': (
+      'base': #607D8B, /* Cool gray - for neutral informational content */
+    )
+  ),
+
+  $common-component-size: (
+    'large': 42px,
+    'default': 36px,
+    'small': 28px,
+  ),
+  $border-radius: (
+    'base': 4px,
+    'small': 2px,
+    'round': 16px,
+    'circle': 50%,
+  ),
+
+  // Card component styling
+  $card: (
+    'border-color': #e6ebf2,
+    'border-radius': 6px,
+    'padding': 20px,
+    'shadow': 0 2px 8px rgba(0, 0, 0, 0.06)
+  ),
+  $tag: (
+    'border-radius': 3px
+  ),
+
+  // Switch component styling
+  $switch: (
+    'core-border-radius': 12px,
+    'button-border-radius': 50%
+  ),
+
+  // Dialog component styling
+  $dialog: (
+    'border-radius': 8px,
+    'padding-primary': 20px,
+    'margin-top': 10vh
+  ),
+
+  // Form components styling
+  $input: (
+    'border-radius': 4px,
+    'hover-border-color': #1E88E5,
+    'focus-border-color': #1E88E5
+  ),
+  $form: (
+    'label-font-size': 14px,
+    'error-font-size': 12px
+  )
+);
+
+// Import all styles if needed
+@use "element-plus/theme-chalk/src/index.scss" as *;

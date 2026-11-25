@@ -1,0 +1,34 @@
+# ---------- Java / Maven ----------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.war
+*.log
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ---------- Node / Vue ----------
+node_modules/
+dist/
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+
+# ---------- 系统 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------- 本地备份 / 私密配置 ----------
+_backup_*/
+application-local.properties
+application-prod.properties

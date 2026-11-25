@@ -1,0 +1,36 @@
+# ---- Java / Maven ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+*.class
+*.log
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ---- Node / Vue ----
+node_modules/
+dist/
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- OS ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- 本地敏感配置 ----
+# 生产环境的数据库账号密码、密钥等不要提交
+application-local.properties
+application-prod.properties

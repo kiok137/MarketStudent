@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <style>
+    .st0{fill:#FFFFFF;}
+    .st1{fill:#F3F3F3;}
+    .st2{fill:#E1E1E1;}
+    .st3{fill:#3498DB;}
+    .st4{fill:#2980B9;}
+    .st5{fill:#ECF0F1;}
+    .st6{fill:#BDC3C7;}
+    .st7{fill:#95A5A6;}
+  </style>
+  
+  <!-- Background Elements -->
+  <circle cx="250" cy="250" r="200" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="350" cy="150" r="50" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="150" cy="350" r="30" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Store/Shop Building -->
+  <rect x="150" y="200" width="200" height="150" class="st1" rx="5"/>
+  <rect x="140" y="180" width="220" height="30" class="st3" rx="5"/>
+  <rect x="170" y="300" width="60" height="50" class="st5" rx="2"/>
+  <rect x="270" y="300" width="60" height="50" class="st5" rx="2"/>
+  <rect x="220" y="240" width="60" height="110" class="st4" rx="2"/>
+  
+  <!-- Store Sign -->
+  <rect x="180" y="190" width="140" height="20" class="st0" rx="3"/>
+  <rect x="200" y="195" width="100" height="10" class="st3" rx="2"/>
+  
+  <!-- Shopping Elements -->
+  <!-- Shopping Cart -->
+  <circle cx="130" cy="370" r="20" class="st6"/>
+  <circle cx="170" cy="370" r="20" class="st6"/>
+  <path d="M110 310 L190 310 L180 360 L120 360 Z" class="st3"/>
+  <rect x="145" y="290" width="10" height="30" class="st4" rx="2"/>
+  
+  <!-- People Shopping -->
+  <circle cx="350" cy="360" r="15" class="st3"/> <!-- Head -->
+  <rect x="335" y="375" width="30" height="40" class="st4" rx="5"/> <!-- Body -->
+  <line x1="335" y1="385" x2="320" y2="410" stroke="#2980B9" stroke-width="5"/> <!-- Left Arm -->
+  <line x1="365" y1="385" x2="380" y2="410" stroke="#2980B9" stroke-width="5"/> <!-- Right Arm -->
+  <line x1="345" y1="415" x2="335" y2="450" stroke="#2980B9" stroke-width="5"/> <!-- Left Leg -->
+  <line x1="355" y1="415" x2="365" y2="450" stroke="#2980B9" stroke-width="5"/> <!-- Right Leg -->
+  
+  <!-- Shopping Bag -->
+  <path d="M380 410 L400 410 L395 440 L385 440 Z" class="st5"/>
+  
+  <!-- Login Elements -->
+  <rect x="80" y="100" width="120" height="150" class="st0" rx="10"/>
+  <rect x="100" y="120" width="80" height="10" class="st6" rx="2"/>
+  <rect x="100" y="140" width="80" height="10" class="st6" rx="2"/>
+  <rect x="100" y="170" width="80" height="30" class="st3" rx="5"/>
+  <rect x="115" y="180" width="50" height="10" class="st0" rx="2"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="120" r="30" class="st5" opacity="0.5"/>
+  <circle cx="100" cy="280" r="20" class="st5" opacity="0.5"/>
+  <circle cx="430" cy="280" r="15" class="st5" opacity="0.5"/>
+</svg> 
