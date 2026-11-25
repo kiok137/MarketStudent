@@ -18,7 +18,11 @@
 ## 界面预览
 
 <p align="center">
-  <img src="docs/screenshots/01-login.png" alt="登录页" width="900" />
+  <img src="docs/screenshots/03-purchase.png" alt="采购订单管理" width="900" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/01-login.png" alt="登录页" width="820" />
 </p>
 
 ---
