@@ -141,13 +141,17 @@ spring.datasource.username=root
 spring.datasource.password=你的密码
 ```
 
-如需使用 AI 功能（商品文案生成 / 补货建议），在同一个文件末尾填写密钥；不填也能正常启动，只是调用 AI 接口时会提示未配置：
+如需使用 AI 功能（商品文案生成 / 补货建议），把密钥写在 **`src/main/resources/application-local.properties`**（该文件已被 `.gitignore` 忽略，不会提交）：
 
 ```properties
-ai.api-base-url=https://api.deepseek.com/v1
-ai.model=deepseek-chat
+ai.api-base-url=https://open.bigmodel.cn/api/paas/v4
+ai.model=glm-4-flash
 ai.api-key=你的密钥
 ```
+
+`application.properties` 通过 `spring.config.import=optional:classpath:application-local.properties` 引入它，文件不存在时自动跳过，不影响其它功能。
+
+项目默认按 **OpenAI 兼容协议**调用，换成 DeepSeek / 硅基流动 / 本地 Ollama 只需改上面三行，代码无需改动。
 
 ```bash
 mvn spring-boot:run
